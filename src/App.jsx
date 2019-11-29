@@ -1,9 +1,10 @@
 import React, { Component } from 'react'
 
 export default class App extends Component {
+    
     render() {
         return (
-            <div> hello world </div>
+            <div className="app-container"> hello world </div>
         )
     }
 }
