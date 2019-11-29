@@ -15,7 +15,7 @@ export default class Home extends Component {
 
     render() {
         return (
-            <div> </div>
+            <div> Home 页面 {this.props.msg} </div>
         )
     }
 }
