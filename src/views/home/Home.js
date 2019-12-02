@@ -1,5 +1,7 @@
 import React, { Component } from 'react'
 
+import Demo from './components/Demo';
+
 export default class Home extends Component {
     constructor(props) {
         super(props);
@@ -7,15 +9,17 @@ export default class Home extends Component {
         this.state = {
 
         }
-    }
-
-    componentDidMount() {
 
     }
 
     render() {
+        const { msg, add } = this.props;
         return (
-            <div> Home 页面 {this.props.msg} </div>
+            <div> 
+                <div>Home 页面 {msg} </div>
+                <button onClick={add}>+1</button>
+                <Demo></Demo>
+            </div>
         )
     }
 }
